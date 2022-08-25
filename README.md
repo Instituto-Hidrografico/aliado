@@ -1,12 +1,13 @@
 # _Application Front_
 
 ![github](https://img.shields.io/github/stars/gadelhati/application-front?style=social "Github")
-![java](https://img.shields.io/badge/java-8-6495ED "Java")
-![springboot](https://img.shields.io/badge/springboot-2.4.5-6495ED "Spring Boot")
 ![react](https://img.shields.io/badge/react-17.0.2-6495ED "React")
 
 #### Necessary Tech stack:
 
+- [x] name			file name version			link for download
+- [x] node:			node-v18.8.0-x64			https://nodejs.org/en/
+- [x] visual studio:	VSCodeUserSetup-x64-1.70.2	https://code.visualstudio.com/docs/?dv=win64user
 
 ## Description
 As a naval tradition, the board game called Aliado is very similar to Ludo, which in the Merchant Navy was called Pitoco, in the Brazilian Navy it was called Aliado. .
