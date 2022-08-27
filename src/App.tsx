@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 import './App.css'
 import { Player } from './components/player'
+import logo from './assets/doughnut-svgrepo-com.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
       </p>
 
       <Player></Player>
+      <img src={logo} alt="logo" />
 
 
     </div>
