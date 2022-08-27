@@ -65,6 +65,9 @@ npm run build
 ## Reference API, running locally
 
 > [http://localhost:5173/](http://localhost:5173)
+## SVG Icons
+
+> [SVG Icons](https://www.svgrepo.com/)
 
 ## Git
 
