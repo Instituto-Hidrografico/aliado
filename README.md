@@ -16,9 +16,9 @@
 |`typescript`       |                           |https://www.typescriptlang.org/
 |`node`			    |node-v18.8.0-x64			|https://nodejs.org/en/
 |`visual studio`	|VSCodeUserSetup-x64-1.70.2	|https://code.visualstudio.com/docs/?dv=win64user
-|`intellij`         |idealC-2022.2.1            |https://download-cdn.jetbrains.com/idea/ideaIC-2022.2.1.exe
-|`java`             |jdk-18_windows-x64_bin     |https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.exe
-|`python`           |python-3.10.6-amd64        |https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe
+<!-- |`intellij`         |idealC-2022.2.1            |https://download-cdn.jetbrains.com/idea/ideaIC-2022.2.1.exe -->
+<!-- |`java`             |jdk-18_windows-x64_bin     |https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.exe -->
+<!-- |`python`           |python-3.10.6-amd64        |https://www.python.org/ftp/python/3.10.6/python-3.10.6-amd64.exe -->
 
 # Description
 As a naval tradition, the board game called Aliado is very similar to Ludo, which in the Merchant Navy was called Pitoco, in the Brazilian Navy it was called Aliado.
