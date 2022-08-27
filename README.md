@@ -119,6 +119,8 @@ surge
 
 > [Diego](https://github.com/diegoferreirapinto)
 
+> [Augusto](https://github.com/augustmat)
+
 > [Lucas](https://github.com/lucassmartins)
 # License
 
