@@ -46,30 +46,30 @@ npm run build
 # Libraries
 ## visual, css in js
 >[stitches](https://stitches.dev/)
-# data fetching
->[react query](https://react-query.tanstack.com/)
+## data fetching
+<!-- >[react query](https://react-query.tanstack.com/) -->
 
 >[graphql](https://graphql.org/)
 
->[uRQL](https://formidable.com/open-source/urql/)
+<!-- >[uRQL](https://formidable.com/open-source/urql/) -->
 
-# tests
+## tests
 >[testing-library](https://testing-library.com/docs/react-testing-library/intro/) : for unitary tests
 
 >[cypress](https://www.cypress.io/)
 
-## Reference API download link
-
-> [https://github.com/gadelhati/application-back](https://github.com/gadelhati/application-back)
-
-## Reference API, running locally
-
-> [http://localhost:5173/](http://localhost:5173)
-## SVG Icons
+# SVG Icons
 
 > [SVG Icons](https://www.svgrepo.com/)
 
-## Git
+<!-- # Reference API download link -->
+
+<!-- > [https://github.com/Instituto-Hidrografico/aliado-back](https://github.com/Instituto-Hidrografico/aliado-back) -->
+
+<!-- # Reference API, running locally -->
+
+<!-- > [http://localhost:8080/aliado-back](http://localhost:8080/aliado-back) -->
+# Git
 
 ```
 git config --global http.proxy http://username:password@proxy-armacao.mb:6060
@@ -86,7 +86,7 @@ git tag 1.1.0 <insert-commitID-here>
 git push -u origin master
 git diff
 ```
-
+# Deploy
 ## Deploy in nginx
 ```
 npx browserslist@latest --update-db
