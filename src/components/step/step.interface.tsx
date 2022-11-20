@@ -1,4 +1,4 @@
-import { Piece } from "./piece.interface";
+import { Piece } from "./../piece/piece.interface";
 
 export interface Step {
     color: number,

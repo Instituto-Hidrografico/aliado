@@ -1,8 +1,7 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 import './App.css'
-import { PlayerList } from './components/player'
-import { FieldList } from './components/field.list'
+import { GameList } from './components/game.list'
 import logo from './assets/doughnut-svgrepo-com.svg'
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       {/* <PlayerList></PlayerList> */}
-      <FieldList></FieldList>
+      <GameList></GameList>
       {/* <img src={logo} alt="logo" /> */}
     </div>
   )

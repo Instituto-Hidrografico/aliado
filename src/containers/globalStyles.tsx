@@ -33,7 +33,7 @@ export const stitches = createStitches({
             three: '#52796F',
             four: '#84A98C',
             five: '#CAD2C5',
-            six: 'red',
+            six: 'orange',
         },
         space: {
             xxs: "0.422rem",
