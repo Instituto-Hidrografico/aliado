@@ -6,6 +6,7 @@ import { Player } from "../../components/player/player.interface"
 export const FieldShow = (player: Player) => {
     const [field, setField] = useState(fieldInitial)
     const colo: any = "five"
+    let count: number = 0
     const color = (index: number): any => {
         let color:any = "one"
         switch(index){
@@ -39,8 +40,15 @@ export const FieldShow = (player: Player) => {
     return (
         <>
             {field.step.map((element, index) => {
+                if(count<5){
+                    count++
+                } else {
+                    count = 0
+                }
                 return  <Field position={color(index)}>
-                            {player.piece.position == index && player.name}
+                            {/* {player.piece.position == index && player.name} */}
+                            {/* {index < 6 ? count+index: count}      */}
+                            {count}
                         </Field>
             })}
             {JSON.stringify(field.step.length)}
