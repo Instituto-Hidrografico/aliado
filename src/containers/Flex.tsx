@@ -26,7 +26,6 @@ export const FlexCointainer = styled('section',{
     alignContent: 'space-around',//flex-start | flex-end | center | space-between | space-around | stretch
     flex: 'none',
     // backgroundColor: "$letterColor",
-    width: '100%',
     gap: '10px',
 })
 export const FlexItem = styled('article',{

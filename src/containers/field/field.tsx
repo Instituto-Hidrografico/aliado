@@ -34,4 +34,7 @@ export const Field = styled('div',{
             },
         },
     },
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
 }) 

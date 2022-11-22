@@ -3,6 +3,7 @@ import { Field } from "./field"
 import { fieldInitial } from "../../components/field/field.initial"
 import { Player } from "../../components/player/player.interface"
 import { FlexItem, FlexCointainer } from "../Flex"
+import { Player as PP } from "../Player"
 
 export const FieldShow = (player: Player) => {
     const [field, setField] = useState(fieldInitial)
@@ -46,7 +47,7 @@ export const FieldShow = (player: Player) => {
                     count = 0
                 }
                 return  <FlexItem><Field position={color(count+1)}>
-                            {player.piece.position == index && player.name}
+                            {player.piece.position == index && <PP team="two"/>}
                         </Field></FlexItem>
             })}
         </FlexCointainer>
