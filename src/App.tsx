@@ -3,12 +3,13 @@ import { useState } from 'react'
 import './App.css'
 import { GameList } from './components/game.list'
 import logo from './assets/doughnut-svgrepo-com.svg'
+import { Article, Section } from './containers/Section'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -32,7 +33,7 @@ function App() {
       {/* <PlayerList></PlayerList> */}
       <GameList></GameList>
       {/* <img src={logo} alt="logo" /> */}
-    </div>
+    </>
   )
 }
 

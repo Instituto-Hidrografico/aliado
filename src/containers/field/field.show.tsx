@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Field } from "./field"
 import { fieldInitial } from "../../components/field/field.initial"
 import { Player } from "../../components/player/player.interface"
+import { Article, Section } from "../Section"
 
 export const FieldShow = (player: Player) => {
     const [field, setField] = useState(fieldInitial)
@@ -38,19 +39,19 @@ export const FieldShow = (player: Player) => {
         return color
     }
     return (
-        <>
+        <Section>
             {field.step.map((element, index) => {
                 if(count<5){
                     count++
                 } else {
                     count = 0
                 }
-                return  <Field position={color(index)}>
+                return  <Article><Field position={color(index)}>
                             {player.piece.position == index && player.name}
                             {/* {index < 6 ? count+index: count}      */}
                             {/* {count} */}
-                        </Field>
+                        </Field></Article>
             })}
-        </>
+        </Section>
     )
 }
