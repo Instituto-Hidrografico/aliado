@@ -51,7 +51,6 @@ export const FieldShow = (player: Player) => {
                             {count}
                         </Field>
             })}
-            {JSON.stringify(field.step.length)}
         </>
     )
 }
