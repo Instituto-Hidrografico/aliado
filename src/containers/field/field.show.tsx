@@ -2,11 +2,10 @@ import { useState } from "react"
 import { Field } from "./field"
 import { fieldInitial } from "../../components/field/field.initial"
 import { Player } from "../../components/player/player.interface"
-import { Article, Section } from "../Section"
+import { FlexItem, FlexCointainer } from "../Flex"
 
 export const FieldShow = (player: Player) => {
     const [field, setField] = useState(fieldInitial)
-    const colo: any = "five"
     let count: number = 0
     const color = (index: number): any => {
         let color:any = "one"
@@ -39,19 +38,17 @@ export const FieldShow = (player: Player) => {
         return color
     }
     return (
-        <Section>
+        <FlexCointainer direction="row">
             {field.step.map((element, index) => {
-                if(count<5){
+                if(index%6){
                     count++
                 } else {
                     count = 0
                 }
-                return  <Article><Field position={color(index)}>
+                return  <FlexItem><Field position={color(count+1)}>
                             {player.piece.position == index && player.name}
-                            {/* {index < 6 ? count+index: count}      */}
-                            {/* {count} */}
-                        </Field></Article>
+                        </Field></FlexItem>
             })}
-        </Section>
+        </FlexCointainer>
     )
 }
