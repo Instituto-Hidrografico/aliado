@@ -3,7 +3,7 @@ import { fieldInitial } from "./field/field.initial"
 import { dice } from "../service/dice"
 import { playerInitial } from "./player/player.initial"
 import { FieldShow } from "../containers/field/field.show"
-import { FlexCointainer, FlexItem } from "../containers/Flex"
+import { FlexCointainer, FlexItem } from "../containers/template/Flex"
 
 export const GameList = () => {
     const [field, setField] = useState(fieldInitial)

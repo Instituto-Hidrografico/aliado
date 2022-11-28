@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Field } from "./field"
 import { fieldInitial } from "../../components/field/field.initial"
 import { Player } from "../../components/player/player.interface"
-import { FlexItem, FlexCointainer } from "../Flex"
+import { FlexItem, FlexCointainer } from "../template/Flex"
 import { Player as PP } from "../Player"
 
 export const FieldShow = (player: Player) => {
@@ -39,17 +39,17 @@ export const FieldShow = (player: Player) => {
         return color
     }
     return (
-        <FlexCointainer direction="row">
+        <>
             {field.step.map((element, index) => {
                 if(index%6){
                     count++
                 } else {
                     count = 0
                 }
-                return  <FlexItem><Field position={color(count+1)}>
+                return  <Field position={color(count+1)}>
                             {player.piece.position == index && <PP team="two"/>}
-                        </Field></FlexItem>
+                        </Field>
             })}
-        </FlexCointainer>
+        </>
     )
 }
