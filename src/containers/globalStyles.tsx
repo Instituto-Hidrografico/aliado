@@ -34,6 +34,12 @@ export const stitches = createStitches({
             four: '#E5E052',
             five: '#C12525',
             six: '#FFFFFF',
+
+            one1: '#2F3E46',
+            two1: '#354F52',
+            three1: '#52796F',
+            four1: '#84A98C',
+            five1: '#CAD2C5',
         },
         space: {
             xxs: "0.422rem",
