@@ -40,6 +40,7 @@ export const stitches = createStitches({
             three1: '#52796F',
             four1: '#84A98C',
             five1: '#CAD2C5',
+            six1: '#FFFFFF',
         },
         space: {
             xxs: "0.422rem",
@@ -86,15 +87,15 @@ const injectGlobalStyles = stitches.globalCss({
 injectGlobalStyles()
 
 export const darkTheme = stitches.createTheme({
-    colors: {
-        bg: "$darkJungleGreen",
-        fg: "$fluorescentBlue",
-    }
+    // colors: {
+    //     bg: "$darkJungleGreen",
+    //     fg: "$fluorescentBlue",
+    // }
 });
 
 export const funkyTheme = stitches.createTheme({
     colors: {
-        bg: "$darkKhaki",
-        fg: "$darkSlateBlue",
+        // bg: "$darkKhaki",
+        // fg: "$darkSlateBlue",
     }
 });
