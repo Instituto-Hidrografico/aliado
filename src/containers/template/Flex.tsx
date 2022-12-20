@@ -5,11 +5,10 @@ const { styled } = stitches;
 export const FlexCointainer = styled('div',{
     height: '100vh',
     width: '100%',
-    display: "flex",
+    display: 'flex',
     justifyContent: 'start',
     alignItems: 'center',
-    flex: 'none',
-    flexWrap: 'nowrap',
+    overflow: 'hidden',
     variants: {
         sidehide: {
             true: {
@@ -43,33 +42,34 @@ export const FlexCointainer = styled('div',{
         },
         element:{
             all: {
-                flexDirection: "row",
-                
-                color: '$six1',
-                backgroundColor: '$letterColor'
+                alignItems: 'stretch',
+                backgroundColor: 'LightGray',
             },
             sidebar: {
-                width: '20%',
-                flexDirection: "column",
+                height: '100vh',
+                width: '256px',
+                flexDirection: 'column',
                 backgroundPosition: '50%',
                 padding: '1em',
-                alignItems: 'baseline',
+                margin: '.5em .0em 0em .5em',
+                borderRadius: '5px 5px 0px 0px',
+                // alignItems: 'baseline',
                 color: '$five1',
                 backgroundColor: '$one1',
                 backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
             },
             main: {
-                width: '80%',
+                flexBasis: '0',
+                flexGrow: '1.5',
                 flexDirection: "column",
 
                 color: '$four1',
                 backgroundColor: '$three1'
             },
             content: {
-                height: '88vh',
+                height: '94vh',
                 flexDirection: "row",
                 
-
                 color: '$three1',
                 backgroundColor: '$four1'
             },
@@ -108,13 +108,43 @@ export const FlexItem = styled('div',{
                 textTransform: 'capitalize',
             }
         },
-        float: {
-            left: {
-                float: 'left',
+    },
+})
+
+export const Sidebar = styled('aside',{
+    height: '100vh',
+    width: '256px',
+    display: 'flex',
+    justifyContent: 'start',
+    flexDirection: 'column',
+    backgroundPosition: '50%',
+    padding: '1em',
+    margin: '.5em .5em 0em .5em',
+    borderRadius: '5px 5px 0px 0px',
+    alignItems: 'baseline',
+    // overflow: 'hidden',
+    color: '$five1',
+    backgroundColor: '$one1',
+    backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
+    '> ': {
+        overflow: '',
+    },
+    variants: {
+        sidehide: {
+            true: {
+                '@media screen and (max-width: 900px)': {
+                    display: 'none',
+                },
             },
-            right: {
-                float: 'right',
+            false: {
+                width: '5%',
+                'div > p': {
+                    display: 'none',
+                },
+                '@media screen and (max-width: 900px)': {
+                    display: 'none',
+                },
             },
-        }
+        },
     },
 })
