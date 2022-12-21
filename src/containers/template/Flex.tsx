@@ -48,12 +48,13 @@ export const FlexCointainer = styled('div',{
             sidebar: {
                 height: '100vh',
                 width: '256px',
-                flexDirection: 'column',
-                backgroundPosition: '50%',
+                // flexDirection: 'column',
+                // backgroundPosition: '50%',
                 padding: '1em',
                 margin: '.5em .0em 0em .5em',
                 borderRadius: '5px 5px 0px 0px',
-                // alignItems: 'baseline',
+                // justifyContent: 'center',
+                // alignItems: 'center',
                 color: '$five1',
                 backgroundColor: '$one1',
                 backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
@@ -92,6 +93,7 @@ export const FlexItem = styled('div',{
     userSelect: 'none',
     borderRadius: '5px',
     float: 'right',
+    transition: '.5s',
     '&:hover': {
         color: '$five1',
         backgroundColor: '$three1',
@@ -112,23 +114,16 @@ export const FlexItem = styled('div',{
 })
 
 export const Sidebar = styled('aside',{
-    height: '100vh',
     width: '256px',
     display: 'flex',
     justifyContent: 'start',
     flexDirection: 'column',
-    backgroundPosition: '50%',
     padding: '1em',
     margin: '.5em .5em 0em .5em',
     borderRadius: '5px 5px 0px 0px',
-    alignItems: 'baseline',
-    // overflow: 'hidden',
     color: '$five1',
     backgroundColor: '$one1',
     backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
-    '> ': {
-        overflow: '',
-    },
     variants: {
         sidehide: {
             true: {
