@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react'
 import { GameList } from './components/game.list'
-import { FlexCointainer, FlexItem, Sidebar } from './containers/template/Flex'
+import { FlexCointainer, SideItem, Sidebar } from './containers/template/Flex'
 import { Icon } from './assets/svg.access' 
 // import image from './assets/image/hamburger2.png'
 import hamburger from './assets/hamburger-list.svg'
@@ -13,10 +13,10 @@ const App = () => {
   return (
     <FlexCointainer element='all'>
       <Sidebar sidehide={show}>
-        <FlexItem element='sideitem'><Tooltip data-tip="item a"><Icon name="chat-quote-fill" /></Tooltip><p>item a</p></FlexItem>
-        <FlexItem element='sideitem'><Tooltip data-tip="item b"><Icon name="people-circle" /></Tooltip><p>item b</p></FlexItem>
-        <FlexItem element='sideitem'><Tooltip data-tip="item c"><Icon name="table" /></Tooltip><p>item c item c</p></FlexItem>
-        <FlexItem element='sideitem' onClick={changeShow}><Tooltip data-tip="item d"><Icon name="grid" /></Tooltip><p>item d</p></FlexItem>
+        <SideItem ><Tooltip data-tip="item a"><Icon name="chat-quote-fill" /></Tooltip><p>item a</p></SideItem>
+        <SideItem ><Tooltip data-tip="item b"><Icon name="people-circle" /></Tooltip><p>item b</p></SideItem>
+        <SideItem ><Tooltip data-tip="item c"><Icon name="table" /></Tooltip><p>item c item c</p></SideItem>
+        <SideItem onClick={changeShow}><Tooltip data-tip="item d"><Icon name="grid" /></Tooltip><p>item d</p></SideItem>
         {/* <FlexItem element='sideitem' onClick={changeShow}>
           <svg viewBox="0 0 130 80" width="25" height="25">
             <rect width="100" height="10"></rect>
@@ -25,11 +25,11 @@ const App = () => {
           </svg>
         </FlexItem> */}
       </Sidebar>
-      <FlexCointainer element='main' mainhide={show}>
+      <FlexCointainer element='main'>
         <FlexCointainer element='nav'>
-          <FlexItem>1</FlexItem>
+          <SideItem>Sistema1</SideItem>
           {/* <FlexItem>2</FlexItem> */}
-          <FlexItem>3</FlexItem>
+          <SideItem>3</SideItem>
         </FlexCointainer>
         <FlexCointainer element='content'>
           {/* <GameList></GameList> */}

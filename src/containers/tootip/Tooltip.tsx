@@ -48,5 +48,5 @@ export const Tooltip = styled('div',{
     '&:hover:before, &:hover:after': {
         visibility: 'visible',
         opacity: '1',
-    }
+    },
 })

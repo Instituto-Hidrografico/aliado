@@ -2,7 +2,6 @@ import { useState } from "react"
 import { Field } from "./field"
 import { fieldInitial } from "../../components/field/field.initial"
 import { Player } from "../../components/player/player.interface"
-import { FlexItem, FlexCointainer } from "../template/Flex"
 import { Player as PP } from "../Player"
 
 export const FieldShow = (player: Player) => {

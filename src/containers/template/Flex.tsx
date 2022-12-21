@@ -10,60 +10,15 @@ export const FlexCointainer = styled('div',{
     alignItems: 'center',
     overflow: 'hidden',
     variants: {
-        sidehide: {
-            true: {
-                '@media screen and (max-width: 900px)': {
-                    display: 'none',
-                },
-            },
-            false: {
-                width: '5%',
-                'div > p': {
-                    display: 'none',
-                },
-                // 'div > div': {
-                //     display: 'none',
-                // },
-                '@media screen and (max-width: 900px)': {
-                    display: 'none',
-                },
-            },
-        },
-        mainhide: {
-            false: {
-                width: '95%',
-                'div > p': {
-                    display: 'none',
-                },
-                '@media screen and (max-width: 900px)': {
-                    width: '100%',
-                },
-            },
-        },
         element:{
             all: {
                 alignItems: 'stretch',
-                backgroundColor: 'LightGray',
-            },
-            sidebar: {
-                height: '100vh',
-                width: '256px',
-                // flexDirection: 'column',
-                // backgroundPosition: '50%',
-                padding: '1em',
-                margin: '.5em .0em 0em .5em',
-                borderRadius: '5px 5px 0px 0px',
-                // justifyContent: 'center',
-                // alignItems: 'center',
-                color: '$five1',
-                backgroundColor: '$one1',
-                backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
+                backgroundColor: '$back',
             },
             main: {
                 flexBasis: '0',
                 flexGrow: '1.5',
                 flexDirection: "column",
-
                 color: '$four1',
                 backgroundColor: '$three1'
             },
@@ -87,12 +42,13 @@ export const FlexCointainer = styled('div',{
         },
     },
 })
-export const FlexItem = styled('div',{
-    height: '3vh',
-    width: '3vw',
+export const SideItem = styled('div',{
+    height: '$xss',
+    width: '$xss',
     userSelect: 'none',
     borderRadius: '5px',
-    float: 'right',
+    padding: '.5em',
+    textTransform: 'capitalize',
     transition: '.5s',
     '&:hover': {
         color: '$five1',
@@ -101,16 +57,6 @@ export const FlexItem = styled('div',{
     p : {
         display: 'inline',
     },
-    variants: {
-        element: {
-            sideitem: {
-                height: '5vh',
-                width: '100%',
-                padding: '.5em',
-                textTransform: 'capitalize',
-            }
-        },
-    },
 })
 
 export const Sidebar = styled('aside',{
@@ -118,25 +64,25 @@ export const Sidebar = styled('aside',{
     display: 'flex',
     justifyContent: 'start',
     flexDirection: 'column',
-    padding: '1em',
-    margin: '.5em .5em 0em .5em',
-    borderRadius: '5px 5px 0px 0px',
+    padding: '$xxs',
+    margin: '$xxs',
+    borderRadius: '.3rem',
     color: '$five1',
     backgroundColor: '$one1',
     backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
     variants: {
         sidehide: {
             true: {
-                '@media screen and (max-width: 900px)': {
+                '@bp4': {
                     display: 'none',
                 },
             },
             false: {
-                width: '5%',
+                width: '2.9rem',
                 'div > p': {
                     display: 'none',
                 },
-                '@media screen and (max-width: 900px)': {
+                '@bp4': {
                     display: 'none',
                 },
             },

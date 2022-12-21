@@ -5,6 +5,7 @@ export const stitches = createStitches({
         bp1: "(min-width: 320px)",
         bp2: "(min-width: 768px)",
         bp3: "(min-width: 1200px)",
+        bp4: "(max-width: 900px)",
     },
     theme: {
         colors: {
@@ -41,8 +42,14 @@ export const stitches = createStitches({
             four1: '#84A98C',
             five1: '#CAD2C5',
             six1: '#FFFFFF',
+
+            back: 'LightGray',
         },
         space: {
+            side: "256px",
+            radios: "5px",
+            xxs0: "0rem",
+
             xxs: "0.422rem",
             xs: "0.563rem",
             sm: "0.75rem",
@@ -50,9 +57,13 @@ export const stitches = createStitches({
             md: "1.33rem",
             lg: "1.77rem",
             xl: "2.369rem",
-            xxl: "3.157em",
+            xxl: "3rem",//"3.157em",
+
             step: "100px",
+            cinco: "5px",
+            px0: "0px",
         },
+        fonts: {},
         fontSizes: {
             xxs: "0.422rem",
             xs: "0.563rem",
@@ -76,7 +87,7 @@ const injectGlobalStyles = stitches.globalCss({
     html: { height: '-webkit-fill-available' },
     main: {
         display: 'flex',
-        flexWrap: ',nowrap',
+        flexWrap: 'nowrap',
         height: '100vh',
         maxHeight: '100vh',
         overflowX: 'auto',
