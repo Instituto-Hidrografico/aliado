@@ -53,6 +53,7 @@ export const SideItem = styled('div',{
     '&:hover': {
         color: '$five1',
         backgroundColor: '$three1',
+        boxShadow: '0 0 0.2em #000, 0 0 0.2em #999, 0 0 0.2em #888',
     },
     p : {
         display: 'inline',
@@ -70,21 +71,27 @@ export const Sidebar = styled('aside',{
     color: '$five1',
     backgroundColor: '$one1',
     backgroundImage: 'linear-gradient(to bottom, $one1, $three1)',
+    // scrollBehavior: 'smooth',
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    '&:hover' : {
+        // textShadow: '0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000',
+    },
     variants: {
         sidehide: {
             true: {
-                '@bp4': {
-                    display: 'none',
-                },
+                // '@bp4': {
+                //     display: 'none',
+                // },
             },
             false: {
                 width: '2.9rem',
                 'div > p': {
                     display: 'none',
                 },
-                '@bp4': {
-                    display: 'none',
-                },
+                // '@bp4': {
+                //     display: 'none',
+                // },
             },
         },
     },

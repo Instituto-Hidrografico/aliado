@@ -9,21 +9,31 @@ import { Tooltip } from './containers/tootip/Tooltip'
 const App = () => {
   const [show, setShow] = useState(true)
   const changeShow = () => { setShow( !show ) }
+  const vector: string[][] = [["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"]/*, ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"]*/]
+
+  const search_animal = () => {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+  }
 
   return (
     <FlexCointainer element='all'>
       <Sidebar sidehide={show}>
-        <SideItem ><Tooltip data-tip="item a"><Icon name="chat-quote-fill" /></Tooltip><p>item a</p></SideItem>
-        <SideItem ><Tooltip data-tip="item b"><Icon name="people-circle" /></Tooltip><p>item b</p></SideItem>
-        <SideItem ><Tooltip data-tip="item c"><Icon name="table" /></Tooltip><p>item c item c</p></SideItem>
-        <SideItem onClick={changeShow}><Tooltip data-tip="item d"><Icon name="grid" /></Tooltip><p>item d</p></SideItem>
-        {/* <FlexItem element='sideitem' onClick={changeShow}>
-          <svg viewBox="0 0 130 80" width="25" height="25">
-            <rect width="100" height="10"></rect>
-            <rect y="30" width="100" height="10"></rect>
-            <rect y="60" width="100" height="10"></rect>
-          </svg>
-        </FlexItem> */}
+        <>{vector.map((element) => {
+          return <SideItem ><Tooltip data-tip={element[0]}><Icon name={element[1]} /></Tooltip><p>{element[2]}</p></SideItem>
+        })}</>
+        <SideItem onClick={changeShow}><Tooltip data-tip="hide items"><Icon name="grid" /></Tooltip><p>hide</p></SideItem>
       </Sidebar>
       <FlexCointainer element='main'>
         <FlexCointainer element='nav'>
