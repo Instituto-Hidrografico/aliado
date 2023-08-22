@@ -46,7 +46,7 @@ export const FieldShow = (player: Player) => {
                     count = 0
                 }
                 return  <Field position={color(count+1)}>
-                            {player.piece.position == index && <PP team="two"/>}
+                            {player.pieces[0].position == index && <PP team="two"/>}
                         </Field>
             })}
         </>

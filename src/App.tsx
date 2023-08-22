@@ -1,36 +1,34 @@
 import { ChangeEvent, useState } from 'react'
-import { GameList } from './components/game.list'
+import { GameSet } from './components/game.set'
 import { FlexCointainer, SideItem, Sidebar } from './containers/template/Flex'
 import { Icon } from './assets/svg.access' 
 // import image from './assets/image/hamburger2.png'
 import hamburger from './assets/hamburger-list.svg'
 import { Tooltip } from './containers/tootip/Tooltip'
-import { AA } from './components/aa'
 
 const App = () => {
   const [show, setShow] = useState(true)
   const changeShow = () => { setShow( !show ) }
   const vector: string[][] = [["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"]/*, ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"],["tooltip a", "chat-quote-fill", "item a"], ["tooltip b", "people-circle", "item b"], ["tooltip c", "table", "item c"]*/]
 
-  const search_animal = () => {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("mySearch");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myMenu");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-  }
+  // const search_animal = () => {
+  //   var input, filter, ul, li, a, i;
+  //   input = document.getElementById("mySearch");
+  //   filter = input.value.toUpperCase();
+  //   ul = document.getElementById("myMenu");
+  //   li = ul.getElementsByTagName("li");
+  //   for (i = 0; i < li.length; i++) {
+  //       a = li[i].getElementsByTagName("a")[0];
+  //       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+  //           li[i].style.display = "";
+  //       } else {
+  //           li[i].style.display = "none";
+  //       }
+  //   }
+  // }
 
   return (
-    // <GameList ></GameList>
-    <AA></AA>
+    <GameSet ></GameSet>
     // <FlexCointainer element='all'>
     //   <Sidebar sidehide={show}>
     //     <>{vector.map((element) => {
