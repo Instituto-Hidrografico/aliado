@@ -11,7 +11,7 @@ export const GameList = () => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => { setField({ ...field, [event.target.name]: event.target.value }) }
 
     const step = () => {
-        setPlayer({ ...player, player.piece[0].position: { position: player.piece[0].position + roll} })
+        setPlayer({ ...player, player.pieces[0].position: { position: player.piece[0].position + roll} })
     }
     const rollDice = () => {
         setRoll(dice(6))

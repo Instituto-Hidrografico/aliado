@@ -3,5 +3,5 @@ import { pieceInitial } from "../piece/piece.initial";
 
 export const playerInitial : Player = {
     name: "GG",
-    piece: [pieceInitial, pieceInitial, pieceInitial, pieceInitial],
+    pieces: [pieceInitial, pieceInitial, pieceInitial, pieceInitial],
 }
