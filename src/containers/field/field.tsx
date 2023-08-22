@@ -6,6 +6,9 @@ export const Field = styled('div',{
     height: '3em',
     width: '3rem',
     borderRadius: '.25rem',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
     variants: {
         position:{
             one: {
@@ -34,7 +37,4 @@ export const Field = styled('div',{
             },
         },
     },
-    display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center',
 }) 
